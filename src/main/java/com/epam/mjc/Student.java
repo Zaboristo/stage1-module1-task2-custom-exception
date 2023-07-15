@@ -27,8 +27,7 @@ public enum Student {
   }
 
   public static Student getValueOf(long id) throws StudentNotFoundException {
-
-        try {
+    try{
           return Arrays.stream(Student.values())
                   .filter(student -> id == student.getId())
                   .findFirst()
